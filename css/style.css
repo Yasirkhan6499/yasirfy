@@ -139,9 +139,16 @@ a{
     width: 40px;
     height: 40px;
 }
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
 .icon--primary{
     fill: var(--color-primary);
     
+}
+.icon--white{
+    fill: white;
 }
 .icon-container{
     background: #f3f9fa;
@@ -151,6 +158,9 @@ a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+.icon-container--accent{
+background: var(--color-accent);
 }
 
 /* Buttons */
@@ -184,6 +194,10 @@ background: #4d98fa;
 .btn--accent{
     background: var(--color-accent);
     color: white;
+}
+.btn--long{
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .btn--accent:hover{
     background: #fa5830;
@@ -350,7 +364,7 @@ display: flex;
 /* Quotes */
 
 .quote{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-style: italic;
     color: var(--color-body-darker);
     line-height: 1.3;
@@ -363,13 +377,13 @@ content: open-quote;
     content: close-quote;
 }
 .quote__author{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 0;
 }
 .quote__company{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-style: normal;
     opacity: .4;
 }
@@ -403,5 +417,83 @@ display: grid;
 @media screen and (min-width: 1024px){ /* For PC only */
     .grid--1x3{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Testimonials */
+
+.testimonial{
+    padding: 3rem;
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image > img{
+    width: 100%;
+}
+
+
+.testimonial__image > .icon-container{
+position: absolute;
+top: 3rem;
+right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .testimonial .quote{   
+        width: 20ch; 
+        margin-left: 6rem;
+     }
+}
+
+/* Callout */
+
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background: var(--color-primary);
+    color: white;
+}
+.callout__content{
+    text-align: center;
+}
+.callout__heading{
+    font-size: 3rem;
+    color: white;
+    margin-top: 0;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout__content p{
+        width: 20ch;
+    }
+    .callout .btn{
+        padding: 2rem 2rem;
+        margin-left: 2rem;
+        
+    }
+  
+     
+}
+@media screen and (min-width: 1024px) {
+    .callout__content p{
+        width: auto;
+    }
+    .callout .btn{
+        padding: 2rem 6rem;
     }
 }

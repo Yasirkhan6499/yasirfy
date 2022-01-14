@@ -22,9 +22,10 @@ body{
 h1,h2,h3{
     color: var(--color-heading);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 h1{
-    font-size: 7rem;
+    font-size1.8rem;
 }
 h2{
     font-size: 4rem;
@@ -34,6 +35,11 @@ h3{
 }
 p{
     margin-top: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -300,7 +306,7 @@ background: #4d98fa;
     margin-right: 1rem;
 }
 .plan__description{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 0rem;
@@ -607,5 +613,40 @@ right: -32px;
     }
     .nav__item{
         border: none;
+    }
+}
+
+/* Hero */
+
+.hero{
+    padding-top: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.hero__image{
+    width: 100%;
+}
+.hero .block__heading{
+    line-height: 1.2;
+    font-size: 5.5rem;
+}
+.hero__tagline{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: 2rem 0 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__image{
+        margin: 0 0 3rem 1rem;
+    }
+    .hero .block__header{
+        align-self: center;
+        text-align: left;
+    }
+    .hero .block__heading{
+        font-size: 3.5rem;
+    }
+    .hero__tagline{
+        font-size: 1.2rem;
     }
 }

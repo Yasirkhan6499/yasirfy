@@ -571,6 +571,7 @@ right: -32px;
 }
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 .block__heading{
     margin-top: 0;
@@ -770,3 +771,7 @@ width: 100%;
         max-width: 700px;
     }
 }
+
+
+/*  Testimonial Block */
+

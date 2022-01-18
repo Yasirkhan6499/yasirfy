@@ -127,8 +127,13 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
+   
+}
+.list li{
+    padding-bottom: 2rem;
     
 }
+
 .list--inline .list__item{
     display: inline-block;
     margin-right: 2rem;
@@ -773,5 +778,57 @@ width: 100%;
 }
 
 
-/*  Testimonial Block */
+/*  footer */
+.footer{
+    background: #232323;
+}
+.footer__section{
+    
+    border-bottom: rgb(56, 56, 56) 2px solid;
+    padding: 2rem
+}
+.footer__heading{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer__brand{
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+.footer__copyright{
+    font-size: 1.5rem;
+    opacity: 0.6;
+    margin-left: 6rem;
+}
+.footer__brand > img{
+    width: 100%;
+    max-width: 250px;
+}
+.footer .list li:hover{
+    cursor: pointer;
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    .footer .grid{
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    }
+    .footer .collapsable__content{
+        max-height: 100vh;
+        opacity: 1;
+    }
+    .footer .collapsable__icon{
+        display:  none;
+    }
+    .footer__section{
+        border: 0;
+    }
+    .footer__brand{
+        order: -1;
+        margin-top: 1.6rem;
+    }
+    .footer__heading{
+        font-size: 2.7rem;
+    }
+}
 

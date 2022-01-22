@@ -2,7 +2,7 @@
   "name": "yasirfy-project-program",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".htmlnanorc.js",
   "dependencies": {
     "abab": "^2.0.5",
     "acorn": "^7.4.1",
@@ -538,12 +538,20 @@
     "xtend": "^4.0.2"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yasirkhan6499/yasirfy.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yasirkhan6499/yasirfy/issues"
+  },
+  "homepage": "https://github.com/Yasirkhan6499/yasirfy#readme"
 }
